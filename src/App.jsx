@@ -1,17 +1,24 @@
-﻿import './App.css';
+﻿import { Routes, Route } from 'react-router-dom';
+import './App.css';
 import Header from './components/Header';
-import About from './components/About';
-import Skills from './components/Skills';
+import NavBar from './components/NavBar';
 import Footer from './components/Footer';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
-  const mySkills = ['JavaScript', 'React', 'HTML5', 'CSS3', 'Python', 'Machine Learning'];
-
   return (
     <div className="app-container">
       <Header name="Parita Shah" />
-      <About />
-      <Skills skillList={mySkills} />
+      <NavBar />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+
       <Footer />
     </div>
   );
