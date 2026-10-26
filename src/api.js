@@ -34,3 +34,14 @@ export const deleteTask = (id) =>
     if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
     return res.json();
   });
+
+// P13: AI Feature endpoint helper
+export const generateAiDescription = (title) =>
+  fetch(`${BASE_URL}/api/ai/generate-description`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ title }),
+  }).then((res) => {
+    if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+    return res.json();
+  });
