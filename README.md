@@ -1,4 +1,4 @@
-﻿# Student Portfolio & Full-Stack React Client
+# Student Portfolio & Full-Stack React Client
 
 A modern React portfolio and task management client built with Vite, featuring modular component architecture, props-based data flow, client-side routing, external REST API integration, full-stack MongoDB synchronization, route-level code splitting, Docker containerization, and AI-powered task description assistance.
 

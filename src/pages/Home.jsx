@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import { getTasks, createTask, updateTask, deleteTask, generateAiDescription } from '../api';

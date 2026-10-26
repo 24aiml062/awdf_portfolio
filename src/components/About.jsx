@@ -1,4 +1,4 @@
-﻿function About() {
+function About() {
   return (
     <section>
       <h2>About Me</h2>

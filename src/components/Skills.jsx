@@ -1,4 +1,4 @@
-﻿function Skills({ skillList }) {
+function Skills({ skillList }) {
   return (
     <section>
       <h2>Skills</h2>
